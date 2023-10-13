@@ -144,3 +144,17 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
   }
+  .header-col{
+    float: left;
+    width: 25%;
+  }
+.menu-col{
+    float: left;
+    width: 75%;
+}
+
+  .header-row{
+    clear: both;
+    content: "";
+    display: table;
+  }
