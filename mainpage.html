@@ -3,165 +3,95 @@
 <head>
     <title>Lokesh's Personal Website</title>
 </head>
-    <style>
-            nav {
-            margin: 35px auto 0;
-            position: relative;
-            right: -340px;
-            width: 650px;
-            height: 50px;
-            /* background-color: #34495e; */
-            border-radius: 8px;
-            font-size: 0;
-            }
-        nav a {
-            line-height: 50px;
-            height: 100%;
-            font-size: 15px;
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-            text-decoration: none;
-            text-transform: uppercase;
-            text-align: center;
-            color:royalblue;
-            cursor: pointer;
-        }
-        nav .animation {
-            position: absolute;
-            height: 100%;
-            top: 0;
-            z-index: 0;
-            transition: all .5s ease 0s;
-            border-radius: 8px;
-        }
-        a:nth-child(1) {
-            width: 100px;
-        }
-        a:nth-child(2) {
-            width: 110px;
-        }
-        a:nth-child(3) {
-            width: 100px;
-        }
-        a:nth-child(4) {
-            width: 160px;
-        }
-        a:nth-child(5) {
-            width: 120px;
-        }
-        nav .start-home, a:nth-child(1):hover~.animation {
-            width: 100px;
-            left: 0;
-            background-color: #1abc9c;
-        }
-        nav .start-about, a:nth-child(2):hover~.animation {
-            width: 110px;
-            left: 100px;
-            background-color: #e74c3c;
-        }
-        nav .start-blog, a:nth-child(3):hover~.animation {
-            width: 100px;
-            left: 210px;
-            background-color: #3498db;
-        }
-        nav .start-portefolio, a:nth-child(4):hover~.animation {
-            width: 160px;
-            left: 310px;
-            background-color: #9b59b6;
-        }
-        nav .start-contact, a:nth-child(5):hover~.animation {
-            width: 120px;
-            left: 470px;
-            background-color: #e67e22;
-        }
-
-        h1 {
-            text-align: center;
-            margin: 40px 0 40px;
-            text-align: center;
-            font-size: 30px;
-            color: #ecf0f1;
-            text-shadow: 2px 2px 4px #000000;
-            font-family: 'Cherry Swash', cursive;
-        }
-        span {
-            color: #2BD6B4;
-        }
-        body{
-            background-color:whitesmoke;
-        }
-</style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300;1,400;1,600&family=Young+Serif&display=swap" rel="stylesheet">
     <body>
     
         <header>
+            <div class="heaer-row">
+                <div class="header-col">
+                    <span id="header-text">Lokesh</span>
+                </div>
+                <div class="menu-col">
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="./About/About.html">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Portefolio</a>
+                        <a href="./Contact/Contact.html" target="_blank">Contact</a>
+                        <div class="animation start-home"></div>
+                    </nav>
+                </div>
+            </div>
             
-            <!-- <h1>Welcome to <span>My Personal Webpage</span></h1> -->
-            <!-- This is nav bar to represent I have used link refrence links and everything -->
-            
-         
-            <nav>
-                <a href="#">Home</a>
-                <a href="./About/About.html">About</a>
-                <a href="#">Blog</a>
-                <a href="#">Portefolio</a>
-                <a href="./Contact/Contact.html" target="_blank"">Contact</a>
-                <div class="animation start-home"></div>
-            </nav>
-            <img src="Mainpage/lokesh.png" align="right" alt="No Image Found" width="400" height="400" />
+           
+            <!-- <img src="Mainpage/lokesh.png" align="right" alt="No Image Found" width="400" height="400" /> -->
 
             <!-- <p>   <a href="#">Home</a>
                 | <a href="#">Expreience</a>
                 | <a rel="author"  href="https://www.linkedin.com/in/lokeshreddy-darukumalli-3a67b5234/">Linkedin Profile</a>
                 | <a href="https://www.hackerrank.com/LOKESH_77" target="_blank">HackerRank Profile</a>
                 | <a href="./About/About.html">About</a>
-                | <a href="./Contact/Contact.html" target="_blank">Contact Me</a></p>         -->
-        </header>       
-        <!-- This is paragraph tag to represent the my main objecive -->   
-			 <h2>HELLO  --------------------------------------------------</h1>              
-             <h1>This is,  LOKESH REDDY..,</h1>                     
-            <caption>~ I am passionate about</caption> <i>Web Development. </i>  
+                | <a href="./Contact/Contact.html" target="_blank">Contact Me</a></p>-->
+        </header> 
 
+
+        
+
+
+       <div class="row port-row">
+        
+        <div class="column two-column">
+            <img src="mainpage/lokesh.png" alt="lokesh Photo" id="portfolio_photo" >
+        </div>
+        <div class="column two-column">
+            <h1 class="intro">Hi, I am LOKESH REDDY..,</h1>                     
+            <b class="overview"><p> a passionate</caption> <i>Web Developer. </i></p></b> 
+        </div>
+       </div>
+             
+       <!-- <hr class="seperator"> -->
         <!-- Undergrad porject details using headings tags, strong, bold tags -->
+
+        <div class="hidden-box"></div>
         <div  class="Projects">
-            <h2><u>Undergrad Project Details:</u></h2>
-            <h3>Title : College Technical Fest Organizer</h3>
-              <p> We use <strong>PHP, bootstrap, Javascript, CSS, HTML and MySQL</strong> to build this project.
-                It is an administrative and student portal where students can look at the details.
-                 In terms of the events, what types of events are to be carried out, venue of the event,
-                information about the universitiy and a registration portal as well. Whereas the administrative portal allows
-                to add event information such as name, venue and access to manipulate your student data
-                n Department Specific & Eventual events wise. In addition, the students who are registered to
-               participate in the competition of Quiz have a separate website. It updates the results to your email immediately.</p>
+        <div class="row">
+            <div class="column project-col border-left">
+                <h2><u>Undergrad Project Details:</u></h2>
+                <h3>Title : College Technical Fest Organizer</h3>
+                <p class="project-description"> We use <strong>PHP, bootstrap, Javascript, CSS, HTML and MySQL</strong> to build this project.
+                    It is an administrative and student portal where students can look at the details.
+                     In terms of the events, what types of events are to be carried out, venue of the event,
+                    information about the universitiy and a registration portal as well. Whereas the administrative portal allows
+                    to add event information such as name, venue and access to manipulate your student data
+                    n Department Specific & Eventual events wise. In addition, the students who are registered to
+                   participate in the competition of Quiz have a separate website. It updates the results to your email immediately.</p>
+                    <span>For more details about the project please click here: <a href="" class="info-button">Click here</a> </span>
+                   
+            
+                </div>
 
-            <!-- This is figure tag and figcaption tag to represent the my project  -->
-           <figure>
-                <img src="Mainpage/landin.png" alt="" width="1100" height="500"/>
-                <figcaption>  This page will let students or users see details about the events, locations, dates and times for which they are sponsoring an event as well as information.</figcaption>
-           </figure>
+        
+            <div class="column project-col">
+                <h2><u>Internship Expreience:</u></h2>
+                <h3>Role: Software Dev Intern, Tourslog, New York.</h3>
+                <p class="project-description"> I've been very good at being a Software Developer intern at Tourslog.Having roles and responsibility to create UI for users' Landin pages that
+                  makes it easy to sign in or register, as well as the creation of separate user administration panel where User Data is being managed. I've also made
+                   a ForgotPassword User Interface for users that forgot their password.</p>
+                <p>For more details regarding internship Please click the button here</p>
+                <a href="" class="info-button">Click here</a>
+                <p></p>
+            </div>
         </div>
-        <!-- This is project background WHERE I uses html tags, I'll explain this tags in this video -->
-            <h2>My Undergrad Project Video explained by me.</h2>
-        <video src="Mainpage/Presentation1.mp4" autoplay controls width="1100" height="500" />
-        </video>
-           <!-- This is Internship Expreience and certificate of Acheivement -->
-        <div class="Internship">
-           <h2><u>Internship Expreience:</u></h2>
-           <h3>Role: Software Dev Intern, Tourslog, New York.</h3>
-           <p> I've been very good at being a Software Developer intern at Tourslog.Having roles and responsibility to create UI for users' Landin pages that
-             makes it easy to sign in or register, as well as the creation of separate user administration panel where User Data is being managed. I've also made
-              a ForgotPassword User Interface for users that forgot their password.</p>
-            <!-- This is figure tag and figcaption tag to represent the my Internship  -->
-             <figure>
-
-                <!-- This is Image of certificate of acheivement  -->
-                <img src="./Mainpage/intern.jpg" alt="" width="1100" height="500"/>
-                <figcaption> I have completed three months handson expreience at Tourslog, And was awarded Acheivement of Certification by the director of  Christopher Hasanali.</figcaption>
-            </figure>
         </div>
-
+       
+           
             <!-- Table to represent my education background here I used table,thead,caption,etc... -->
-        <h2><u>Background Education:</u></h2>
+            <div class="academic-table">
+                <h2 class="edu-heading"><u>Background Education:</u></h2>
         <div class="Education" align="center">
             <table border="4px" width="100%">
                 <caption>Education History</caption>
@@ -198,48 +128,74 @@
                         <td>97.12%</td>
                     </tr>
             </table>
+           
         </div>
 
+    </div>
+
+
+    <div class="row">
+        <div class="column video-heading">
+            <h2>Title: College Technical Fest Organizer, Batchelor's Major Project </h2>
+            <video width="560" controls>
+                <source src="./Mainpage/Users_vide.mp4" type="video/mp4">
+            </video>
+
+        </div>
+        <div class="column">
+            <h2>University of Southern Mississippi,#SMTT [USM]- present My Master's University</h2>
+            <video width="600" height="300" preload controls loop autoplay >
+                <source src="./Mainpage/USM.webm" type="video/webm">
+            </video>
+
+        </div>
+    </div>
+
         <!-- Video of undergrad project  -->
-        <h2>Title: College Technical Fest Organizer, Batchelor's Major Project </h2>
-        <video width="560" controls>
+      
+        <!-- <video width="560" controls>
             <source src="./Mainpage/Users_vide.mp4" type="video/mp4">
-        </video>
+        </video> -->
 
         <!-- Video of my master's University -->
 
         <!-- Different Format of video, Here I have used webm Format -->
-        <h2>University of Southern Mississippi,#SMTT [USM]- present My Master's University</h2>
-        <video width="600" height="300" preload controls loop autoplay >
+        <!-- <h2>University of Southern Mississippi,#SMTT [USM]- present My Master's University</h2> -->
+        <!-- <video width="600" height="300" preload controls loop autoplay >
             <source src="./Mainpage/USM.webm" type="video/webm">
-        </video>
+        </video> -->
+
 
         <!-- This is achievements and awards of mine  -->
-        <h2><u>Achievements and Awards:</u></h2>
-        <ul>
+        <div>
+        <h2 class="acheivements"><u>Achievements and Awards:</u></h2>
+        <ul class="awards">
             <strong><li>Professional Awards</li></strong>
-            <ol>
+            <ol class="awards">
                 <li>Secured a First as Green House Grand House Caption in my High School.</li>
                 <li>In my 10th grade, I've achieved a third rank in the entire Indian region of Prakasam and Andhra Pradesh. </li>
                 <li>Secured a First Rank in National Olampaid Exam Conducted by State Government, Ap.</li>
             </ol>
            <strong> <li>Non- Professional Awards</li></strong>
-            <ol>
-                <li>Secured a Badge in National Event i.e., Bectagon as a Event Coordinator in my Batchelors.</li>
-                <li> I was given a second prize for the presentation of my junior thesis at <abbr title="Bapatla engineering college">BEC.</abbr>.</li>
+            <ol  class="awards" style="list-style-type:none;">
+               
+                    <li class="list-image">Secured a Badge in National Event i.e., Bectagon as a Event Coordinator in my Batchelors.</li>
+                    
+                <li class="list-image"> I was given a second prize for the presentation of my junior thesis at <abbr title="Bapatla engineering college">BEC.</abbr>.</li>
             </ol>
         </ul>
+    </div>
          <!-- Audio of my favourite song -->
-         <h3>Favourite Song</h3>
-         <audio src="./Mainpage/shapeofyou.mp3" controls autoplay></audio>
+         <!-- <h3>Favourite Song</h3> -->
+         <!-- <audio src="./Mainpage/shapeofyou.mp3" controls autoplay></audio> -->
 
         <!-- Form tag to users who can reach out me here I am using fieldset, 
             label, email,legend,input, radio, Dropdown,textarea,submit button -->
-
-        <h2><u>Drop your details here:</u></h2>
+<!-- 
+        <h2><u>Drop your details here:</u></h2> -->
 
         <!-- This is form tag to let the users get contact with me -->
-        <div class="contact" align="center">
+        <!-- <div class="contact" align="center">
             <form action="Contact/success.html" method="post"> 
                 <fieldset>
                     <legend align="center">Contact Me</legend>
@@ -270,17 +226,67 @@
                     </fieldset>
                 </div>
              </form>
-            </div>
+            </div> -->
             <!-- This is business map of my father using iframe -->
-            <h2> If you're interested in buying a property or house, please use this map:</h2>
+            <!-- <h2> If you're interested in buying a property or house, please use this map:</h2>
             <div id="business">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4613.909280925551!2d80.02186399011278!3d15.256621198705346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4b0bf233f4a123%3A0x633c80b72c096b19!2sReal%20estate%20partner!5e0!3m2!1sen!2sus!4v1694801296096!5m2!1sen!2sus" width="1330" height="450" style="border:0;" 
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> -->
+            <div class="row footer-image">
+                <div class="column">
+                    <h2 id="contact-form-heading"><u>Drop your details here:</u></h2>
+                    <div class="contact" align="center">
+                        <form action="Contact/success.html" method="post"> 
+                            <fieldset>
+                                <legend align="center" class="contact-me">Contact Me</legend>
+                                <b><label>Name:</label></b><input class="text" type="text" name="Name" placeholder="your Name" size="20" maxlength="30"/></br></br>
+                                    <b><label>Email:</label></b> <input type="email" name="Email" class="email" placeholder="your Email"/></br></br>
+                                    <b><label>Gender:</label></b> <input type="radio" name="gender" value="Men"/>Men
+                                                            <input type="radio" name="gender" value="Female"/>Female 
+                                                            <input type="radio" name="gender" value="Others"/>Others</br></br>
+                                    <b><label>Country:</label></b>  <select name="country">
+                                                                <option value="USA"> USA</option>
+                                                                <option value="canada">Canda</option>
+                                                                <option value="India"> India</option>
+                                                                <option value="Japan">Japan</option>
+                                                                <option value="China"> China</option>
+                                                                <option value="Oman">Oman</option>
+                                                                <option value="Denamrk"> Denmark</option>
+                                                                <option value="Qatar">Qatar</option>
+                                                                <option value="Ireland">Ireland</option>
+                                                                <option value="Portugal">Portugal</option>
+                                                                <option value="France">France</option>
+                                                                <option value="Russia"> Russia</option>
+                                                                <option value="Finland">Finland</option>
+                                                                <option value="Others">Others</option>
+                                                            </select> </br></br>
+                                    <b><label>Message:</label></b> <textarea class="message" name="about"  size="100" placeholder="your Message"></textarea></br></br>
+                                    <input type="checkbox"  name="emailupdates" value="emailupdates"><label>Sign me up for email updates.</label></br></br>
+                                    <button type="submit" class="submit"> Submit </button>
+                                </fieldset>
+                            </div>
+                         </form>
+                        </div> 
+                        <div class="column">
+                            <h2 class="map-banner"> If you're interested in buying a property or house, please use this map:</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4613.909280925551!2d80.02186399011278!3d15.256621198705346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4b0bf233f4a123%3A0x633c80b72c096b19!2sReal%20estate%20partner!5e0!3m2!1sen!2sus!4v1694801296096!5m2!1sen!2sus" width="400" height="300" style="border:0;" 
+                           ></iframe>
+                        
+    
+    
+                    </div>
+
+                </div>
+                
             </div>
-        <footer>
-            <!-- This is footer and copyright -->
-            <p>You can reach me at <a href="mailto:darukumallilokesh777@gmail.com">darukumallilokesh777@gmail.com</a>.</p>
-            <p>&copy; 2023 LokeshReddy Darukumalli</p>
+
+
+
+        <footer class="footer">
+            <img class="img-footer" src="https://img.freepik.com/premium-vector/abstract-transparent-wave-presentation-background_653872-59.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697241600&semt=ais" alt="">
+            <p class="footer">You can reach me at <a href="mailto:darukumallilokesh777@gmail.com">darukumallilokesh777@gmail.com</a>.</p>
+            <p class="footer">&copy; 2023 LokeshReddy Darukumalli</p>
         </footer>
     </body>
 </html>
